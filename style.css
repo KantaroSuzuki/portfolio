@@ -1,0 +1,349 @@
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Serif JP', serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+.container {
+    width: min(100% - 2rem, 650px);
+    margin-inline: auto;
+}
+
+.english {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* header */
+header {
+    height: 70px;
+    width: 100%;
+    background-color:rgba(221, 224, 245, 0.116);
+    font-family: 'Oswald', sans-serif;
+    color: rgb(227, 175, 116);
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left {
+    float: left;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+.header-right {
+    float: right;
+    line-height: 70px;
+}
+
+.header-right ul {
+    display: flex;
+}
+
+.header-right li {
+    padding-left: 15px;
+    transition: all 0.4s;
+}
+
+.header-right li:hover {
+    opacity: 0.7;
+}
+
+
+/* main */
+main {
+    color: rgb(184, 183, 179);
+    background-color: rgb(44, 83, 100);
+}
+
+.wrapper {
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.page-name {
+    color: rgb(227, 175, 116);
+    margin: 70px auto 20px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.page-intro {
+    text-align: center;
+    margin-bottom: 70px;
+    letter-spacing: 5px;
+}
+
+.page-intro p {
+    padding-bottom: 5px;
+}
+
+/* top-wrapper */
+.top-wrapper {
+    color: rgb(227, 175, 116);
+    height: auto;
+
+}
+
+.introduction {
+    padding: 120px 0;
+    font-size: 20px;
+}
+
+.introduction img {
+    width: 25%;
+}
+
+.introduction p {
+    padding-top: 8px;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.e-name {
+    font-size: 25px;
+}
+
+.birth {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+/* career-wrapper */
+.career-wrapper {
+    text-align: left;
+}
+
+
+.timeline-section {
+    position: relative;
+    padding: 0 2em 1.5em 2em;;
+}
+
+.timeline-section:not(:last-child)::before,
+.timeline-section::after {
+    position: absolute;
+    content: '';
+}
+
+.timeline-section:not(:last-child)::before {
+    bottom: 0;
+    left: 16px;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: #d6dde3;
+}
+
+.timeline-section::after {
+    top: 0;
+    left: 9px;
+    width: 14px;
+    height: 14px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    background-color: rgb(227, 175, 116);
+}
+
+.timeline-contents {
+    border-bottom: dashed 1px #c6cdd3;
+    padding-bottom: 1.5em;
+    color: rgb(184, 183, 179);
+    font-size: 15px;
+}
+
+.timeline-title {
+    color: rgb(227, 175, 116);
+    font-size: 1.05em;
+    font-weight: 600;
+    margin: 0 auto .5em;
+}
+
+/* works-wrapper */
+
+.works-wrapper {
+    padding-bottom: 20px;
+}
+
+.energy-closet {
+    color: rgb(184, 183, 179);
+}
+
+.energy-closet h1 {
+    margin-bottom: 40px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.energy-closet p {
+    font-size: 14px;
+    padding: 0 10px 8px 10px;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.photo-comment {
+    font-size: 10px;
+    margin: 0 auto;
+    padding-top: 3px;
+}
+
+.eneclo {
+    margin: 100px 0;
+    height: 500px;
+}
+
+.eneclo01 img {
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.eneclo01 p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.eneclo01 i {
+    font-size: 30px;
+    padding-top: 8px;
+}
+
+.eneclo .contents-left {
+    float: left;
+}
+
+.eneclo .contents-right {
+    float: right;
+}
+
+.eneclo02 .contents-left {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eneclo02 .contents-right {
+    width: 45%;
+}
+
+.eneclo02 img {
+    width: 50%;
+    padding: 2px;
+}
+
+.eneclo03 {
+    height: 430px;
+}
+
+.eneclo03 .contents-left {
+    width: 45%;
+}
+
+.eneclo03 .contents-right {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eneclo03 img {
+    width: 50%;
+    padding: 2px;
+}
+
+.eneclo04 .contents-left {
+    width: 55%;
+}
+
+.eneclo04 .contents-right {
+    width: 45%;
+}
+
+.eneclo04 img {
+    width: 100%;
+}
+
+.link {
+    display: block;
+    font-size: 10px;
+    padding-top: 8px;
+}
+
+
+/* hobby-wrapper */
+
+.hobby-wrapper {
+    padding-bottom: 0;
+}
+
+.travel {
+    height: auto;
+    padding-bottom: 90px;
+}
+
+.travel h1 {
+    font-size: 19px;
+    font-weight: 700;
+
+}
+
+.travel h2 {
+    font-size: 12px;
+    padding: 5px 0;
+
+}
+
+.travel-photo {
+    display: flex;
+}
+
+.travel img {
+    width: 33.3%;
+    padding: 0 3px;
+}
+
+.travels h3 {
+    font-size: 18px;
+    padding-bottom: 90px;
+}
+
+
+/* footer */
+footer {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(34, 64, 77);
+    height: 100px;
+    color: rgb(227, 175, 116);
+    width: 100%;
+
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 65%;
+    float: right;
+
+}
+
+.contact {
+    display: flex;
+    float: left;
+
+}
+
+.contact i {
+    padding: 0 3px 0 2px;
+}
+
